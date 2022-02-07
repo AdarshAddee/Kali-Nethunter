@@ -3,14 +3,14 @@ Hey there, This is my new script. Which will help you to install Kali Nethunter 
 
 # Install
 
-# Linux
+# Linux with Root Session (LRS)
 
-``` sudo apt-update ```
-
-``` sudo apt-upgrade -y ```
-
-``` sudo apt-get install git -y ```
-
-``` git clone https://github.com/adarshaddee/Kali-Nethunter.git ``` 
+```
+sudo apt-update && sudo apt-upgrade -y && sudo apt-get install git -y && git clone https://github.com/adarshaddee/Kali-Nethunter.git 
+``` 
 
 # Termux
+
+```
+apt-update && apt-upgrade -y && apt-get install git -y && git clone https://github.com/adarshaddee/Kali-Nethunter.git 
+``` 
