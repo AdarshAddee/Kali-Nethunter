@@ -24,4 +24,4 @@ chmod +x kali-Nethunter
 ```
 
 # Subscribe
-hey there, You can subscribe <a href="https://youtube.com/c/mridealhat">Mr Idealhat</a> for interesting videoes. 
+hey there, You can subscribe <a href="https://youtube.com/c/mridealhat">Mr Idealhat</a> for interesting videos OR follow <a href="https://mr-idealhat.blogspot.com">Mr Idealhat</a> Blogger website. 
