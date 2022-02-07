@@ -6,8 +6,11 @@ Hey there, This is my new script. Which will help you to install Kali Nethunter 
 # Linux
 
 ``` sudo apt-update ```
+
 ``` sudo apt-upgrade -y ```
+
 ``` sudo apt-get install git -y ```
+
 ``` git clone https://github.com/adarshaddee/Kali-Nethunter.git ``` 
 
 # Termux
