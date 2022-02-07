@@ -18,6 +18,7 @@ apt-update && apt-upgrade -y && apt-get install git -y && git clone https://gith
 # Usage
 ```
 cd Kali-Nethunter
-chbed
+chmod +x kali-Nethunter
+./Kali-Nethunter
 ```
 
