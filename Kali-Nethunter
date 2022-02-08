@@ -1,0 +1,99 @@
+#!/bin/bash
+
+gr="\e[1;32m"
+rd="\e[1;31m"
+no="\e[1;0m"
+bl="\e[1;36m"
+yl="\e[1;33m"
+
+
+starts() {
+
+	clear
+	echo -e "${bl}Make sure You have Minimum ${gr}5GB ${bl}of free storage."
+	sleep 3
+	clear
+	echo -e "${rd}Hit ENTER to continue...."
+	read
+	clear
+	wget -O install-nethunter-termux https://offs.ec/2MceZWr
+	chmod +x install-nethunter-termux
+	clear
+	./install-nethunter-termux
+
+}
+
+# clear
+
+helps(){
+	clear
+	echo
+	echo -e "${bl}Made by ${gr}Adarsh Addee ${bl}with <3"
+	echo -e "${no}I'm not the owner of Kali-Liunx-Nethunter-OS"
+	echo
+	echo -e "   ${gr}*  ${bl}This script will help you to install ${rd}Kali-Nethunter${bl} in Termux."
+	echo
+	echo -e "   ${gr}*  ${rd}Great Powers ${bl}comes with ${rd}Great Responsiblities."
+	echo
+	echo -e "${no}Here are some commands.........?"
+	echo -e "${gr}  --help | -h           ${bl}- Open help.\n"
+	echo -e "${gr}  --start | -s          ${bl}- Start Installation.\n"
+	echo -e "${gr}  --show | -sh          ${bl}- Show commands.\n"
+	echo
+	echo -e "${no}visit 'https://www.kali.org/docs/nethunter/nethunter-rootless' for more info."
+	echo
+	echo -e "${yl}Wants to Connect with me:"
+	echo
+	echo -e "${gr}Search ${bl}Adarsh Addee ${gr}on Google and YouTube and support. ${rd}<3"
+	echo
+}
+
+shows(){
+
+echo -e "\n${rd}List of all available commands after successfull installation\n"
+echo
+echo -e "   ${gr}nethunter                    ${bl}start Kali Nethunter In CLI Mode"
+echo
+echo -e "   ${gr}nethunter kex passwd         ${bl}configure the KeX password (need only before 1st use)"
+echo
+echo -e "   ${gr}nethunter kex &              ${bl}start Kali Nethunter in GUI Mode"
+echo
+echo -e "   ${gr}nethunter kex stop           ${bl}stop Kali Nethunter GUI Mode"
+echo
+echo -e "   ${gr}nethunter <command>          ${bl}run <command> in Nethunter Environment"
+echo
+echo -e "   ${gr}nethunter -r                 ${bl}start Kali Nethunter CLI as root"
+echo
+echo -e "   ${gr}nethunter -r kex passwd      ${bl}configure KeX password for root"
+echo
+echo -e "   ${gr}nethunter -r kex &           ${bl}start Kali Nethunter GUI as root"
+echo
+echo -e "   ${gr}nethunter -r kex stop        ${bl}stop Kali Nethunter GUI as root"
+echo
+echo -e "   ${gr}nethunter -r kex kill        ${bl}kill all KeX sessions"
+echo
+echo -e "   ${gr}nethunter -r <command>       ${bl}run <command> in Nethunter Environment as root"
+echo
+echo
+echo -e "${no}visit 'https://www.kali.org/docs/nethunter/nethunter-rootless/' for more info"
+echo
+}
+
+menu(){
+case $1 in
+	"--help" | "-h")
+		helps;;
+
+	"--show" | "-sh")
+		shows;;
+
+	"--start" | "-s")
+		starts;;
+
+	*)
+		echo -e "${rd}${1} ${no}: ${bl}invalid argument"
+
+esac
+}
+
+menu $1
