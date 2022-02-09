@@ -52,27 +52,27 @@ shows(){
 
 echo -e "\n${rd}List of all available commands after successfull installation\n"
 echo
-echo -e "   ${gr}nethunter                    ${bl}start Kali Nethunter In CLI Mode"
+echo -e "   ${gr}nethunter                  ${bl}- start Kali Nethunter In CLI Mode"
 echo
-echo -e "   ${gr}nethunter kex passwd         ${bl}configure the KeX password (need only before 1st use)"
+echo -e "   ${gr}nethunter kex passwd       ${bl}- configure the KeX password (need only before 1st use)"
 echo
-echo -e "   ${gr}nethunter kex &              ${bl}start Kali Nethunter in GUI Mode"
+echo -e "   ${gr}nethunter kex &            ${bl}- start Kali Nethunter in GUI Mode"
 echo
-echo -e "   ${gr}nethunter kex stop           ${bl}stop Kali Nethunter GUI Mode"
+echo -e "   ${gr}nethunter kex stop         ${bl}- stop Kali Nethunter GUI Mode"
 echo
-echo -e "   ${gr}nethunter <command>          ${bl}run <command> in Nethunter Environment"
+echo -e "   ${gr}nethunter <command>        ${bl}- run <command> in Nethunter Environment"
 echo
-echo -e "   ${gr}nethunter -r                 ${bl}start Kali Nethunter CLI as root"
+echo -e "   ${gr}nethunter -r               ${bl}- start Kali Nethunter CLI as root"
 echo
-echo -e "   ${gr}nethunter -r kex passwd      ${bl}configure KeX password for root"
+echo -e "   ${gr}nethunter -r kex passwd    ${bl}- configure KeX password for root"
 echo
-echo -e "   ${gr}nethunter -r kex &           ${bl}start Kali Nethunter GUI as root"
+echo -e "   ${gr}nethunter -r kex &         ${bl}- start Kali Nethunter GUI as root"
 echo
-echo -e "   ${gr}nethunter -r kex stop        ${bl}stop Kali Nethunter GUI as root"
+echo -e "   ${gr}nethunter -r kex stop      ${bl}- stop Kali Nethunter GUI as root"
 echo
-echo -e "   ${gr}nethunter -r kex kill        ${bl}kill all KeX sessions"
+echo -e "   ${gr}nethunter -r kex kill      ${bl}- kill all KeX sessions"
 echo
-echo -e "   ${gr}nethunter -r <command>       ${bl}run <command> in Nethunter Environment as root"
+echo -e "   ${gr}nethunter -r <command>     ${bl}- run <command> in Nethunter Environment as root"
 echo
 echo
 echo -e "${no}visit 'https://www.kali.org/docs/nethunter/nethunter-rootless/' for more info"
