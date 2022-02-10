@@ -7,7 +7,7 @@ Hey there, this is the simple process of installing Kali-Nethunter in Termux (OR
 # Termux
 
 ```
-apt-update && apt-upgrade -y && apt-get install git -y && apt install wget -y && git clone https://github.com/adarshaddee/Kali-Nethunter.git 
+apt-update && apt-upgrade -y && apt-get install git screenfetch wget -y && git clone https://github.com/adarshaddee/Kali-Nethunter.git 
 ```
 
 # Execution
