@@ -8,9 +8,9 @@ yl="\e[1;33m"
 
 update(){
 
-echo -e "          ${bl} --------------------------------------"
-echo -e "          ${rd}|               Install                |"
-echo -e "          ${bl} --------------------------------------${no}\n"
+echo -e "    ${bl} --------------------------------------"
+echo -e "    ${rd}|               Install                |"
+echo -e "    ${bl} --------------------------------------${no}\n"
 	apt-get update && apt-get upgrade -y
 	apt-get install screenfetch wget -y
 echo
