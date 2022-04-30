@@ -6,18 +6,24 @@ no="\e[1;0m"
 bl="\e[1;36m"
 yl="\e[1;33m"
 
+update(){
 
-starts() {
+echo -e "          ${bl} --------------------------------------"
+echo -e "          ${rd}|               Install                |"
+echo -e "          ${bl} --------------------------------------${no}\n"
+	apt-get update && apt-get upgrade -y
+	apt-get install screenfetch wget -y
+echo
+}
+
+iinstall() {
 
 	clear
 	echo -e "${bl}Make sure You have Minimum ${gr}15GB ${bl}of free storage."
-	sleep 3
-	clear
+	sleep 3; clear
 	echo -e "${rd}Hit ENTER to continue...."
 	read
-	clear
-        screenfetch 
-	sleep 7
+	clear; screenfetch; sleep 3.2; clear; screenfetch
 	echo
 	wget -O install-nethunter-termux https://offs.ec/2MceZWr
 	chmod +x install-nethunter-termux
@@ -28,7 +34,7 @@ starts() {
 
 # clear
 
-helps(){
+help(){
 	clear
 	echo
 	echo -e "${bl}Made by ${gr}Adarsh Addee ${bl}with <3"
@@ -39,9 +45,11 @@ helps(){
 	echo -e "   ${gr}*  ${rd}Great Powers ${bl}comes with ${rd}Great Responsiblities."
 	echo
 	echo -e "${no}Here are some commands.........?"
-	echo -e "${gr}  --help | -h           ${bl}- Open help.\n"
-	echo -e "${gr}  --start | -s          ${bl}- Start Installation.\n"
-	echo -e "${gr}  --show | -sh          ${bl}- Show commands.\n"
+	echo -e "${gr}-> Commands                ${bl}-> Description"
+	echo -e "${gr}  -h | --help              ${bl}- Open help.\n"
+	echo -e "${gr}  -u | --update            ${bl}- Install Pacakages\n"
+	echo -e "${gr}  -s | --start             ${bl}- Start Installation.\n"
+	echo -e "${gr}  -c | --commands          ${bl}- Show commands.\n"
 	echo
 	echo -e "${no}visit 'https://www.kali.org/docs/nethunter/nethunter-rootless' for more info."
 	echo
@@ -51,7 +59,7 @@ helps(){
 	echo
 }
 
-shows(){
+commands(){
 
 echo -e "\n${rd}List of all available commands after successfull installation\n"
 echo
@@ -85,18 +93,24 @@ echo
 menu(){
 case $1 in
 	"--help" | "-h")
-		helps;;
+		help;;
 
-	"--show" | "-sh")
-		shows;;
+	"--commands" | "-c")
+		commands;;
 
-	"--start" | "-s")
-		starts;;
+	"--install" | "-i")
+		iinstall;;
+
+	"--update" | "-u")
+		update;;
 
 	*)
-		echo -e "${rd}${1} ${no}: ${bl}invalid argument"
-
+		help
+		echo -e "\n${rd}${1} ${no}: ${bl}invalid argument\n"
 esac
 }
 
 menu $1
+if [ $? != 0 ]; then
+	clear; help;
+fi
