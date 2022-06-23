@@ -21,7 +21,7 @@ chmod +x kali-Nethunter
 ```
 
 ```
-./Kali-Nethunter
+./kali-nethunter
 ```
 
 # Support
