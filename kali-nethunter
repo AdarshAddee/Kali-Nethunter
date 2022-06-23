@@ -47,7 +47,6 @@ start() {
 	chmod +x install-nethunter-termux
 	clear
 	./install-nethunter-termux
-
 }
 
 # clear
