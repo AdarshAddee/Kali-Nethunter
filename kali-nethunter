@@ -7,20 +7,38 @@ bl="\e[1;36m"
 yl="\e[1;33m"
 
 update(){
-
+clear
 echo -e "    ${bl} --------------------------------------"
 echo -e "    ${rd}|               Install                |"
 echo -e "    ${bl} --------------------------------------${no}\n"
 	apt-get update && apt-get upgrade -y
-	apt-get install screenfetch wget -y
+	apt-get install screenfetch neofetch wget -y
 echo
 }
 
-start() {
+kali(){
 
+echo -e "${rd}"
+
+echo " ██ ▄█▀    ▄▄▄          ██▓        ██▓"
+echo " ██▄█▒    ▒████▄       ▓██▒       ▓██▒"
+echo "▓███▄░    ▒██  ▀█▄     ▒██░       ▒██▒"
+echo "▓██ █▄    ░██▄▄▄▄██    ▒██░       ░██░"
+echo "▒██▒ █▄    ▓█   ▓██▒   ░██████▒   ░██░"
+echo "▒ ▒▒ ▓▒    ▒▒   ▓▒█░   ░ ▒░▓  ░   ░▓  "
+echo "░ ░▒ ▒░     ▒   ▒▒ ░   ░ ░ ▒  ░    ▒ ░"
+echo "░ ░░ ░      ░   ▒        ░ ░       ▒ ░"
+echo "░  ░            ░  ░       ░  ░    ░  "
+echo "                                      "
+echo
+}
+
+
+start() {
 	clear
+	neofetch;
 	echo -e "${bl}Make sure You have Minimum ${gr}15GB ${bl}of free storage."
-	sleep 3; clear
+	sleep 3; clear; sleep 2; screenfetch; clear; kali
 	echo -e "${rd}Hit ENTER to continue...."
 	read
 	clear; screenfetch; sleep 3.2; clear; screenfetch
@@ -35,7 +53,7 @@ start() {
 # clear
 
 help(){
-	clear
+	clear; kali
 	echo
 	echo -e "${bl}Made by ${gr}Adarsh Addee ${bl}with <3"
 	echo -e "${no}I'm not the owner of Kali-Liunx-Nethunter-OS"
@@ -60,7 +78,7 @@ help(){
 }
 
 commands(){
-
+clear; kali; echo
 echo -e "\n${rd}List of all available commands after successfull installation\n"
 echo
 echo -e "   ${gr}nethunter                  ${bl}- start Kali Nethunter In CLI Mode"
