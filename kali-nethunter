@@ -38,10 +38,10 @@ start() {
 	clear
 	neofetch;
 	echo -e "${bl}Make sure You have Minimum ${gr}15GB ${bl}of free storage."
-	sleep 3; clear; sleep 2; screenfetch; clear; kali
+	sleep 3; clear; screenfetch; sleep 2; clear; kali
 	echo -e "${rd}Hit ENTER to continue...."
 	read
-	clear; screenfetch; sleep 3.2; clear; screenfetch
+	clear; screenfetch; sleep 3.2; clear; kali;
 	echo
 	wget -O install-nethunter-termux https://offs.ec/2MceZWr
 	chmod +x install-nethunter-termux
