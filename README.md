@@ -12,7 +12,7 @@
 ## Termux
 
 ```
-apt update && apt upgrade -y && apt-get install git screenfetch wget -y && git clone https://github.com/adarshaddee/Kali-Nethunter.git 
+apt update && apt upgrade -y && apt-get install git screenfetch neofetch wget -y && git clone https://github.com/adarshaddee/Kali-Nethunter.git 
 ```
 
 ## Execution
