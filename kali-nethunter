@@ -16,7 +16,7 @@ echo -e "    ${bl} --------------------------------------${no}\n"
 echo
 }
 
-iinstall() {
+start() {
 
 	clear
 	echo -e "${bl}Make sure You have Minimum ${gr}15GB ${bl}of free storage."
@@ -98,8 +98,8 @@ case $1 in
 	"--commands" | "-c")
 		commands;;
 
-	"--install" | "-i")
-		iinstall;;
+	"--start" | "-s")
+		start;;
 
 	"--update" | "-u")
 		update;;
