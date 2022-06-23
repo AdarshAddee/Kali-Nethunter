@@ -3,7 +3,7 @@
 ="https://www.kali.org/docs/nethunter/nethunter-rootless">Kali-Nethunter</a>.
 
 <center>
-  <img src="https://github.com/adarshaddee/Kali-Nethunter/blob/main/images/kali-nethunter.png" width="100%" title="Kali-Nethunter" />
+  <img src="https://github.com/adarshaddee/Kali-Nethunter/blob/main/images/kali-nethunter.png" width="100%" title="Kali-Nethunter" alt="Kali Nethunter", "Nethiunter in termux" />
  </center>
 
 # Install
