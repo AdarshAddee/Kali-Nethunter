@@ -123,8 +123,8 @@ case $1 in
 		update;;
 
 	*)
-		help
-		echo -e "\n${rd}${1} ${no}: ${bl}invalid argument\n"
+		help;;
+		
 esac
 }
 
