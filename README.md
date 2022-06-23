@@ -14,7 +14,13 @@ apt update && apt upgrade -y && apt-get install git screenfetch wget -y && git c
 ## Execution
 ```
 cd Kali-Nethunter
+```
+
+```
 chmod +x kali-Nethunter
+```
+
+```
 ./Kali-Nethunter
 ```
 
