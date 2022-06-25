@@ -49,6 +49,7 @@ start() {
 	./install-nethunter-termux
 }
 
+
 # clear
 
 help(){
@@ -121,8 +122,10 @@ case $1 in
 	"--update" | "-u")
 		update;;
 
-	*)
+	"")
 		update; start;;
+        *)
+                help;;
 		
 esac
 }
