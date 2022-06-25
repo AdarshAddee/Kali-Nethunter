@@ -2,7 +2,7 @@
 > Hey there, This is my new script. Which will help you to install Kali Nethunter (OR Kali-Linux) Rootless version in your android device without rooting your android device. This will install CLI Mode and GUI Mode of Kali-Linux or you can say Nethunter. You can easily access user and root privileges. `` Official link `` <a href
 ="https://www.kali.org/docs/nethunter/nethunter-rootless">Kali-Nethunter</a>.
 
-<img src="https://github.com/adarshaddee/Kali-Nethunter/blob/main/images/kali.png" alt="Kali nethunter" width="100%" />
+<img src="https://github.com/adarshaddee/Kali-Nethunter/blob/main/images/kali-nethunter.png" alt="Kali nethunter" width="100%" />
 
 # Install
 > Hey there, this is the simple process of installing Kali-Nethunter in Termux (OR Non-Rooted Device). This tool is made for Android (OR Android Device).
